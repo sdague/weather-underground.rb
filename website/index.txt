@@ -17,8 +17,7 @@ w.update(:tempf => 72.1, :humidity => 40, :dewptf => 46.67)</pre>
 
 h2. How to submit patches
 
-Read the "8 steps for fixing other people's
-code":http://drnicwilliams.com/2007/06/01/8-steps-for-fixing-other-peoples-code/.
+Read the "8 steps for fixing other people's code":http://drnicwilliams.com/2007/06/01/8-steps-for-fixing-other-peoples-code/.
 
 Fork the code on github, then send me a merge request.
 
