@@ -13,18 +13,19 @@ module WeatherUnderground
         
         def url(params = {})
             base = "#{BaseURL}?ID=#{@station}&PASSWORD=#{@passwd}"
-            base += "&dateutc=#{Time.now.utc.strftime("%Y-%m-%d %H:%M:%S")}"
+            base += "&dateutc=#{URI.escape(Time.now.utc.strftime("%Y-%m-%d %H:%M:%S"))}"
             base += "&action=updateraw"
-            params.each do |k, v|
-                base += "&#{k}=#{URI.escape(v)}"
+            # we sort them just so we get predictable order for tests
+            params.sort {|a, b| a.to_s <=> b.to_s}.each do |k, v|
+                base += "&#{k}=#{URI.escape(v.to_s)}"
             end
             return base
         end
         
         def update(data = {})
+            open(url) do |f|
             
-            
-            
+            end
         end
     end
 end
