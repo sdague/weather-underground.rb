@@ -23,8 +23,9 @@ module WeatherUnderground
         end
         
         def update(data = {})
-            open(url) do |f|
-            
+            open(url(data)) do |f|
+                # we should really do something with the response
+                
             end
         end
     end

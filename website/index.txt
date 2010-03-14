@@ -1,66 +1,30 @@
 h1. weather underground
 
-
 h2. What
 
+Modules for interacting with Weather Underground website.  Right now
+the focus is on the data upload for their personal weather station
+reporting interface.
 
 h2. Installing
 
 <pre syntax="ruby">sudo gem install weather-underground</pre>
 
-h2. The basics
-
-
 h2. Demonstration of usage
 
-
-
-h2. Forum
-
-"http://groups.google.com/group/weather-underground":http://groups.google.com/group/weather-underground
-
-TODO - create Google Group - weather-underground
+<pre syntax="ruby">w = WeatherUndergound::Uploader.new(station_id, password)
+w.update(:tempf => 72.1, :humidity => 40, :dewptf => 46.67)</pre>
 
 h2. How to submit patches
 
-Read the "8 steps for fixing other people's code":http://drnicwilliams.com/2007/06/01/8-steps-for-fixing-other-peoples-code/ and for section "8b: Submit patch to Google Groups":http://drnicwilliams.com/2007/06/01/8-steps-for-fixing-other-peoples-code/#8b-google-groups, use the Google Group above.
+Read the "8 steps for fixing other people's
+code":http://drnicwilliams.com/2007/06/01/8-steps-for-fixing-other-peoples-code/.
 
-TODO - pick SVN or Git instructions
+Fork the code on github, then send me a merge request.
 
-The trunk repository is <code>svn://rubyforge.org/var/svn/weather-underground/trunk</code> for anonymous access.
+* github: "http://github.com/sdague/weather-underground.rb/tree/master":http://github.com/sdague/weather-underground.rb/tree/master
 
-OOOORRRR
-
-You can fetch the source from either:
-
-<% if rubyforge_project_id %>
-
-* rubyforge: "http://rubyforge.org/scm/?group_id=<%= rubyforge_project_id %>":http://rubyforge.org/scm/?group_id=<%= rubyforge_project_id %>
-
-<pre>git clone git://rubyforge.org/weather-underground.git</pre>
-
-<% else %>
-
-* rubyforge: MISSING IN ACTION
-
-TODO - You can not created a RubyForge project, OR have not run <code>rubyforge config</code>
-yet to refresh your local rubyforge data with this projects' id information.
-
-When you do this, this message will magically disappear!
-
-Or you can hack website/index.txt and make it all go away!!
-
-<% end %>
-
-* github: "http://github.com/sdague/weather-underground/tree/master":http://github.com/sdague/weather-underground/tree/master
-
-<pre>git clone git://github.com/sdague/weather-underground.git</pre>
-
-
-
-* gitorious: "git://gitorious.org/weather-underground/mainline.git":git://gitorious.org/weather-underground/mainline.git
-
-<pre>git clone git://gitorious.org/weather-underground/mainline.git</pre>
+<pre>git clone git://github.com/sdague/weather-underground.rb.git</pre>
 
 h3. Build and test instructions
 
@@ -68,12 +32,11 @@ h3. Build and test instructions
 rake test
 rake install_gem</pre>
 
-
 h2. License
 
 This code is free to use under the terms of the MIT license. 
 
 h2. Contact
 
-Comments are welcome. Send an email to "FIXME full name":mailto:FIXME email via the "forum":http://groups.google.com/group/weather-underground
+Comments are welcome.  Contact me via "github":http://github.com/sdague
 

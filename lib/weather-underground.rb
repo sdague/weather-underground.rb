@@ -4,5 +4,5 @@ $:.unshift(File.dirname(__FILE__)) unless
 require "weather-underground/uploader"
 
 module WeatherUnderground
-  VERSION = '0.0.1'
+  VERSION = '1.0.0'
 end
