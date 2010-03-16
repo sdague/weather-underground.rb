@@ -24,13 +24,19 @@
       }
       var versionBox = new curvyCorners(settings, document.getElementById("version"));
       versionBox.applyCornersToAll();
+      var mainBox = new curvyCorners(settings, document.getElementById("main"));
+      mainBox.applyCornersToAll();
+      var titleBox = new curvyCorners(settings, document.getElementById("title"));
+        titleBox.applyCornersToAll();
     }
   </script>
 </head>
 <body>
 <div id="main">
 
-    <h1><%= title %></h1>
+    <div id="title">
+      <h1><%= title %></h1>
+    </div>
     <div class="sidebar">
       <div id="version" class="clickable" onclick='document.location = "<%= download %>"; return false'>
         <p>Get Version</p>
@@ -42,6 +48,7 @@
       <a href="http://dague.net">Sean Dague</a>, <%= modified.pretty %><br>
       Theme extended from <a href="http://rb2js.rubyforge.org/">Paul Battley</a>
     </p>
+
 </div>
 
 <!-- insert site tracking codes here, like Google Urchin -->

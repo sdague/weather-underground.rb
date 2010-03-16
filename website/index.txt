@@ -15,6 +15,10 @@ h2. Demonstration of usage
 <pre syntax="ruby">w = WeatherUndergound::Uploader.new(station_id, password)
 w.update(:tempf => 72.1, :humidity => 40, :dewptf => 46.67)</pre>
 
+h2. API Documentation
+
+Full module level documentation can be found at http://sdaguegems.rubyforge.org/weather-underground/rdoc
+
 h2. How to submit patches
 
 Read the "8 steps for fixing other people's code":http://drnicwilliams.com/2007/06/01/8-steps-for-fixing-other-peoples-code/.
@@ -37,5 +41,6 @@ This code is free to use under the terms of the MIT license.
 
 h2. Contact
 
-Comments are welcome.  Contact me via "github":http://github.com/sdague
+Comments are welcome.  Contact me via
+"github":http://github.com/sdague, or via "my website":http://dague.net
 

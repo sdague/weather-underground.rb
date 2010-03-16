@@ -1,5 +1,5 @@
 body {
-  background-color: #8DBD82;
+  background-color: #666666;
   font-family: "Georgia", sans-serif;
   font-size: 16px;
   line-height: 1.6em;
@@ -15,8 +15,15 @@ h1 {
   font-size: 4em;
   line-height: 0.8em;
   letter-spacing: -0.1ex;
-	margin: 5px;
+     margin: 5px 0px;
+     color: white;
+     padding: 20px;
+
 }
+#title { 
+         background-color: #B30000;
+         margin-bottom: 30px;
+         }
 li {
   padding: 0;
   margin: 0;
@@ -24,7 +31,6 @@ li {
 }
 a {
   color: #5E5AFF;
-	background-color: #A1DDB1;
   font-weight: normal;
   text-decoration: underline;
 }
@@ -40,8 +46,10 @@ blockquote {
 
 #main {
   width: 55em;
-  padding: 0;
+  background-color: white;
+  padding: 20px;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 .coda {
   text-align: right;
