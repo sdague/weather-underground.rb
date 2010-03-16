@@ -24,13 +24,19 @@
       }
       var versionBox = new curvyCorners(settings, document.getElementById("version"));
       versionBox.applyCornersToAll();
+      var mainBox = new curvyCorners(settings, document.getElementById("main"));
+      mainBox.applyCornersToAll();
+      var titleBox = new curvyCorners(settings, document.getElementById("title"));
+        titleBox.applyCornersToAll();
     }
   </script>
 </head>
 <body>
 <div id="main">
 
-    <h1>weather underground</h1>
+    <div id="title">
+      <h1>weather underground</h1>
+    </div>
     <div class="sidebar">
       <div id="version" class="clickable" onclick='document.location = "http://rubyforge.org/projects/sdaguegems"; return false'>
         <p>Get Version</p>
@@ -46,6 +52,8 @@ reporting interface.</p>
 <h2>Demonstration of usage</h2>
 <p><pre class='syntax'><span class="ident">w</span> <span class="punct">=</span> <span class="constant">WeatherUndergound</span><span class="punct">::</span><span class="constant">Uploader</span><span class="punct">.</span><span class="ident">new</span><span class="punct">(</span><span class="ident">station_id</span><span class="punct">,</span> <span class="ident">password</span><span class="punct">)</span>
 <span class="ident">w</span><span class="punct">.</span><span class="ident">update</span><span class="punct">(</span><span class="symbol">:tempf</span> <span class="punct">=&gt;</span> <span class="number">72.1</span><span class="punct">,</span> <span class="symbol">:humidity</span> <span class="punct">=&gt;</span> <span class="number">40</span><span class="punct">,</span> <span class="symbol">:dewptf</span> <span class="punct">=&gt;</span> <span class="number">46.67</span><span class="punct">)</span></pre></p>
+<h2><span class="caps">API</span> Documentation</h2>
+<p>Full module level documentation can be found at http://sdaguegems.rubyforge.org/weather-underground/rdoc</p>
 <h2>How to submit patches</h2>
 <p>Read the <a href="http://drnicwilliams.com/2007/06/01/8-steps-for-fixing-other-peoples-code/">8 steps for fixing other people&#8217;s code</a>.</p>
 <p>Fork the code on github, then send me a merge request.</p>
@@ -60,11 +68,13 @@ rake install_gem</pre>
 <h2>License</h2>
 <p>This code is free to use under the terms of the <span class="caps">MIT</span> license.</p>
 <h2>Contact</h2>
-<p>Comments are welcome.  Contact me via <a href="http://github.com/sdague">github</a></p>
+<p>Comments are welcome.  Contact me via<br />
+<a href="http://github.com/sdague">github</a>, or via <a href="http://dague.net">my website</a></p>
     <p class="coda">
       <a href="http://dague.net">Sean Dague</a>, 14th March 2010<br>
       Theme extended from <a href="http://rb2js.rubyforge.org/">Paul Battley</a>
     </p>
+
 </div>
 
 <!-- insert site tracking codes here, like Google Urchin -->
