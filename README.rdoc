@@ -4,9 +4,7 @@
 
 == DESCRIPTION:
 
-Modules for interacting with Weather Underground website.  Right now
-the focus is on the data upload for their personal weather station
-reporting interface.
+Modules for interacting with Weather Underground website.  
 
 == FEATURES/PROBLEMS:
 
@@ -20,6 +18,16 @@ the real time interface.
   w.CurrentObservations( '90210' )
   w.SimpleForecast( '90210' )
   w.TextForecast( '90210' )
+
+  The location for your query can be any of the following:
+    * zipcode (US or Canadian)
+    * city state; city, state
+    * city
+    * state
+    * country
+    * airport code (3-letter or 4-letter)
+    * lat,lon
+
 
   w = WeatherUndergound::Uploader(station_id, password)
   w.update(:tempf => 72.1, :humidity => 40, :dewptf => 46.67)

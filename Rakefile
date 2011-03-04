@@ -14,11 +14,12 @@ Hoe.plugin :website
 # Run 'rake -T' to see list of generated tasks (from gem root directory)
 $hoe = Hoe.spec 'weather-underground' do
   self.developer 'Sean Dague', 'sean@dague.net'
+  self.developer 'Jeff McFadden', 'jeff.mcfadden@gmail.com'
   self.post_install_message = 'PostInstall.txt' # TODO remove if post-install message not required
   self.rubyforge_name       = 'sdaguegems' # self.name # TODO this is default value
   self.extra_rdoc_files = ["README.rdoc"]
   self.readme_file = "README.rdoc"
-  self.extra_deps = [['temperature', '>= 1.0.0']]
+  self.extra_deps = [['temperature', '>= 1.0.0'], 'rest-client', 'happymapper']
   # self.extra_deps         = [['activesupport','>= 2.0.2']]
 
 end
