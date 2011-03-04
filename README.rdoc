@@ -14,6 +14,12 @@ This currently uses the standard upload interface, it doesn't yet use
 the real time interface.
 
 == SYNOPSIS:
+  
+  w = WeatherUnderground::Base.new
+  w.Alerts( '90210' )
+  w.CurrentObservations( '90210' )
+  w.SimpleForecast( '90210' )
+  w.TextForecast( '90210' )
 
   w = WeatherUndergound::Uploader(station_id, password)
   w.update(:tempf => 72.1, :humidity => 40, :dewptf => 46.67)
@@ -25,6 +31,9 @@ the real time interface.
 sudo gem install weather-underground
 
 == LICENSE:
+
+Use of the API Subject to Terms and Conditions as specified on 
+http://wiki.wunderground.com/index.php/API_-_XML#API_Terms_Of_Service
 
 (The MIT License)
 
