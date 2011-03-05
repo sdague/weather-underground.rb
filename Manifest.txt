@@ -1,10 +1,17 @@
+Gemfile
 History.txt
 Manifest.txt
 PostInstall.txt
 README.rdoc
 Rakefile
 lib/weather-underground.rb
+lib/weather-underground/alerts.rb
+lib/weather-underground/base.rb
+lib/weather-underground/current_observation.rb
+lib/weather-underground/forecast.rb
+lib/weather-underground/geo_lookup.rb
 lib/weather-underground/uploader.rb
+lib/weather-underground/utils.rb
 script/console
 script/destroy
 script/generate

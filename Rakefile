@@ -19,7 +19,7 @@ $hoe = Hoe.spec 'weather-underground' do
   self.rubyforge_name       = 'sdaguegems' # self.name # TODO this is default value
   self.extra_rdoc_files = ["README.rdoc"]
   self.readme_file = "README.rdoc"
-  self.extra_deps = [['temperature', '>= 1.0.0'], 'rest-client', 'happymapper']
+  self.extra_deps = [['temperature', '>= 1.0.0'], ['rest-client', '>=0'], ['happymapper','>=0'] ]
   # self.extra_deps         = [['activesupport','>= 2.0.2']]
 
 end
